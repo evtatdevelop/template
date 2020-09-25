@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Template</title>
     <link rel="stylesheet" href="bundle.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="./data.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
 </head>
 <body>
-    <h1>Template</h1>
-    <a href="#">Link</a>
-    <i class="fas fa-coffee"></i>
+    <div class="wrapper">
+        <header id="header" class="view-port">
+            <h1>
+                <i class="fas fa-coffee"></i>
+                Template
+            </h1>  
+            
+            <div class="signin">
+                <i class="fas fa-sign-in-alt"></i>
+            </div>
+        </header>
+
+        <section id="applications" class="view-port">
+            <h1>Applications</h1>
+            <div class="colection">
+                <template id="app-template" style="display: none;">
+                    <div class="item">
+                        <h2></h2>
+                        <ul></ul>
+                        <button id='' class="get">Get It</button>
+                    </div>        
+                </template>                 
+            </div>
+        </section>
+
+    </div>
 
     <script src="./index.js"></script>
 </body>

@@ -16,3 +16,17 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin app-color($color: $yellow) {
+  outline: 5px solid $color;
+
+  & h2 {
+    color: $color;
+  }
+
+  & button {
+    border: 1px solid $color;
+    color: #ffffff;
+    background: $color;
+  }
+}

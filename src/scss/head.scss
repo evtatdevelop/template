@@ -1,0 +1,19 @@
+@import "partials/params";
+@import "partials/mixins";
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 50px;
+
+    & h1 {
+        letter-spacing: 2px;
+    }
+
+    & .signin {
+        font-size: 28px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}
