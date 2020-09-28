@@ -6,7 +6,7 @@
     <title>Template</title>
     <link rel="stylesheet" href="bundle.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="./data.js"></script>
+    <script src="./js/data.js"></script>
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
 <body>
@@ -29,15 +29,46 @@
                     <div class="item">
                         <h2></h2>
                         <ul></ul>
-                        <button id='' class="get" data-name="">Get It</button>
+                        <button id='' class="get" data-name="" data-color="">Get It</button>
                     </div>        
                 </template>                 
             </div>
         </section>
 
+        <section id="appForm" class="hide">
+            <h1>Application form</h1>
+            <button class="closer"><i class="fas fa-times"></i></button>
+            <form   class="app-form" 
+                    method="post" 
+                    enctype="multipart/form-data"
+                    autocomplete="off">
+
+                <div class="form-rows">
+
+                    <div class="row row-name">
+                        <input  type="text" name="username" id="username"
+                                minlength="3" maxlength="10" required
+                                class="user-name pln" value="" placeholder="Name"
+                        />
+                        <div class="error hide"></div>
+                    </div>
+                    <div class="row row-email">
+                        <input  type="email" name="useremail" id="useremail"
+                                required
+                                class="user-email pln" value="" placeholder="Email"
+                        />
+                        <div class="error hide"></div>
+                    </div>    
+                </div>
+                <button type="submit" class="submit">Ok</button>
+            </form>
+        </section>    
+
+
     </div>
 
-    <script src="./handlers.js"></script>
-    <script src="./index.js"></script>
+    <script src="./js/handlers.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

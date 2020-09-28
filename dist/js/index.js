@@ -20,6 +20,7 @@ const renderApp = app => {
     appElement.querySelector('ul').appendChild(renderLiColection(app.advantages))
     appElement.querySelector('button').setAttribute('id', app.buttonId)
     appElement.querySelector('button').setAttribute('data-name', app.buttonId)
+    appElement.querySelector('button').setAttribute('data-color', app.color)
     return appElement
 }
 
