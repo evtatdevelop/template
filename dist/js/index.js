@@ -30,5 +30,4 @@
         fragment.appendChild(renderApp(applications[i]))
     }
     colection.appendChild(fragment);
-    
 })()
